@@ -13,7 +13,7 @@ def selectionSort(array, size) -> List[int]:
     temp=array[i]
     array[i]=min
     array[minpos]=temp
-    
+  return array  
       
 
 # Do not change the following code
