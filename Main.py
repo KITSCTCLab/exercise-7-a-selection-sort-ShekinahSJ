@@ -3,15 +3,15 @@ from typing import List
 def selectionSort(array, size) -> List[int]:
   # Write your code here
   for i in range(size-1):
-    min=array[i]
+    #min=array[i]
     for j in range(i,size-1):
       
-      if array[j]<min:
+      if array[j]<array[j+1]:
         min=array[j]
         minpos=j
-      '''else:
+      else:
         min=array[j+1]
-        minpos=(j+1)'''
+        minpos=(j+1)
     temp=array[i]
     array[i]=min
     array[minpos]=temp
